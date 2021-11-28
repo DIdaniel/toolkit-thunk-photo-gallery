@@ -1,4 +1,7 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+
+// api 처리
+export const getPhotos = createAsyncThunk();
 
 export const gallerySlice = createSlice({
   name: "gallery",
